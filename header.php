@@ -38,14 +38,13 @@
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/essets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
-                                    <a href="<?php the_field('num1', 2); ?>"><?php the_field('num1', 2); ?></a>
-                                    <a href="<?php the_field('num2', 2); ?>"><?php the_field('num2', 2); ?></a>
+                                    <a href="<?php the_field('phone_1', 2); ?>"><?php the_field('phone_1', 2); ?></a>
+                                    <a href="<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/essets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
-                                <address>ул. Василисы Кожиной, 1<br>
-                                    Москва, Россия, 121096</address>
+                                <address><?php the_field('addr', 2); ?></address>
                             </div>
                         </div>
                     </div>
